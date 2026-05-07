@@ -57,3 +57,8 @@ ul{
     padding: 2rem;
 }
 
+.btn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}

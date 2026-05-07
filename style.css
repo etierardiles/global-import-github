@@ -1,0 +1,59 @@
+:root{
+    --primary-color: #2A0081;
+    --secondary-color: #B7E7FC;
+    --tarjetas-color: #FFD3F0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--primary-color); 
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.encabesado{
+    display: grid;
+    grid-template-columns: repeat(2, 30%);  
+    background-color: var(--secondary-color);
+    padding-top: 2rem;
+}
+
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 30%;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+}
+
+.lista-nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+.contenedor-titulo{
+    background-image: url(imagenes/fondo-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+

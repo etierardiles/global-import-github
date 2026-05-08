@@ -1,0 +1,51 @@
+:root{
+    --primary-color: #16389f;
+    --secondary-color: #B7E7FC;
+    --tarjetas-color: #FFD3F0;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+label{
+    padding-top: 10px;
+    padding-bottom: 4px;
+}
+
+form{
+    background-color:var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:4px; 
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.datos-personales{
+    background-color: var(--secondary-color);
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    border-top: 3px solid var(--tarjetas-color);
+    border-left: 3px solid var(--tarjetas-color);
+    border-right: 3px solid var(--tarjetas-color);
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.Datos-Contacto-Acceso{
+    background-color: var(--secondary-color);
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    border-bottom: 3px solid var(--tarjetas-color);
+    border-left: 3px solid var(--tarjetas-color);
+    border-right: 3px solid var(--tarjetas-color);
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 10px;
+}

@@ -2,6 +2,7 @@
     --primary-color: #16389f;
     --secondary-color: #B7E7FC;
     --tarjetas-color: #FFD3F0;
+    --color-btn: black;
 }
 
 *{
@@ -17,35 +18,124 @@ label{
 form{
     background-color:var(--primary-color);
     display: flex;
-    flex-direction: column;
+    flex-direction: column ;
     align-items: center;
     justify-content: center;
     margin:4px; 
     padding-top: 6px;
     padding-bottom: 6px;
 }
+.contenedor{
+    background-color: var(--secondary-color);
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    border-bottom: 3px solid var(--tarjetas-color);
+    border-left: 3px solid var(--tarjetas-color);
+    border-right: 3px solid var(--tarjetas-color);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
 
 .datos-personales{
     background-color: var(--secondary-color);
     display:flex;
     flex-direction: column;
-    width: 30%;
+    width: 50%;
     border-top: 3px solid var(--tarjetas-color);
     border-left: 3px solid var(--tarjetas-color);
     border-right: 3px solid var(--tarjetas-color);
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .Datos-Contacto-Acceso{
     background-color: var(--secondary-color);
     display:flex;
     flex-direction: column;
-    width: 30%;
+    width: 50%;
+    border-left: 3px solid var(--tarjetas-color);
+    border-right: 3px solid var(--tarjetas-color);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.direccion-entraga{
+    background-color: var(--secondary-color);
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    border-left: 3px solid var(--tarjetas-color);
+    border-right: 3px solid var(--tarjetas-color);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.Preferencias-Términos{
+    background-color: var(--secondary-color);
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    border-left: 3px solid var(--tarjetas-color);
+    border-right: 3px solid var(--tarjetas-color);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.Botones-Acción{
+    background-color: var(--secondary-color);
+    display:flex;
+    flex-direction: column;
+    width: 50%;
     border-bottom: 3px solid var(--tarjetas-color);
     border-left: 3px solid var(--tarjetas-color);
     border-right: 3px solid var(--tarjetas-color);
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 10px;
+}
+
+.contenedor-checkbox{
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+
+.contenedor-radio{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.Suscripción-newsletter{
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+
+.Aceptación-Política-Privacidad{
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+
+.btn-registrarme{
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 35%;
+    background-color: var(--color-btn);
+    border: 2px solid var(--tarjetas-color);
+    border-radius: 2px;
+    color: #ffff;
+}
+.btn-limpiar{
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin: 4px 35%;
+    background-color: var(--color-btn);
+    border: 2px solid var(--tarjetas-color);
+    border-radius: 2px;
+    color: #ffff;
 }

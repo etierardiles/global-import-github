@@ -8,46 +8,147 @@
 </head>
 <body>
     <form action="#" method="post">
-        <section class="datos-personales" id="datos-personales">
-            <label for="" id="nombre">Nombre completo:</label>
-            <input type="text" name="nombre" id="nombre">
-            <label for="" id="">Fecha de nacimiento:</label>
-            <input type="date" name="" id="fecha-nacimiento">
-            <label for="" id="rut">rut</label>
-            <input type="text" name="" id="inp-rut">
-            <label for="" id="genero">Genero:</label>
-            <select name="" id="slt-genero">
-                <option value="seleccione">Selecione una opcion</option>
-                <option value=" Masculino">Masculino</option>
-                <option value="Femenino">Femenino</option>
-                <option value="No binarior">No binario</option>
-                <option value="Prefiero no decir">Prefiero no decir</option>
-            </select>
-            <label for="" id="nacionalidad">Nacionalidad:</label>
-            <select name="" id="slt-nacionalidad">
-                <option value="seleccione">Selecione una opcion</option>
-                <option value="chile">Chile</option>
-                <option value="argentina">Argentina</option>
-                <option value="colombia">Colombia</option>
-                <option value="peru">Peru</option>
-                <option value="estados unidos">Estados unidos</option>
-                <option value="españa">España</option>
-                <option value="brasil">Brasil</option>
-                <option value="japon">japon</option>
-            </select>
-        </section>
-        <section class="Datos-Contacto-Acceso" id="Datos-Contacto-Acceso">
-            <label for="" id="correo-electronico">correo-electronico:</label>
-            <input type="text" id="correo-electronico">
-            <label for="" id="">confimar correo electronico:</label>
-            <input type="email" id="confimacion-corrreo">
-            <label for="" id="confirmacion-contraseña">Contraceña:</label>
-            <input type="password" id="contraceña">
-            <label for="" id="confirmacion-contraseña">confirmacion contraseña:</label>
-            <input type="password" id="confirmacion-contraseña">
-            <label for="" id="telefono">telefono:</label>
-            <input type="tel" id="inp-telefono">
-        </section>
+        <div class="contenedor" id="contenedor">
+            <section class="datos-personales" id="datos-personales">
+                <label for="" id="nombre">Nombre completo:</label>
+                <input type="text" name="nombre" id="nombre" required>
+                <label for="" id="">Fecha de nacimiento:</label>
+                <input type="date" name="" id="fecha-nacimiento" required>
+                <label for="" id="rut">rut</label>
+                <input type="text" name="" id="inp-rut"required>
+                <label for="" id="genero">Genero:</label>
+                <select name="" id="slt-genero">
+                    <option value="seleccione">Selecione una opcion</option>
+                    <option value=" Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="No binarior">No binario</option>
+                    <option value="Prefiero no decir">Prefiero no decir</option>
+                </select>
+                <label for="" id="nacionalidad">Nacionalidad:</label>
+                <select name="" id="slt-nacionalidad">
+                    <option value="seleccione">Selecione una opcion</option>
+                    <option value="chile">Chile</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="peru">Peru</option>
+                    <option value="estados unidos">Estados unidos</option>
+                    <option value="españa">España</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="japon">japon</option>
+                </select>
+            </section>
+            <section class="Datos-Contacto-Acceso" id="Datos-Contacto-Acceso">
+               <label for="" id="correo-electronico">correo-electronico:</label>
+                <input type="text" id="correo-electronico" required>
+                <label for="" id="">confimar correo electronico:</label>
+                <input type="email" id="confimacion-corrreo" required>
+                <label for="" id="confirmacion-contraseña">Contraceña:</label>
+                <input type="password" id="contraceña" required>
+                <label for="" id="confirmacion-contraseña">confirmacion contraseña:</label>
+                <input type="password" id="confirmacion-contraseña" required>
+                <label for="" id="telefono">telefono:</label>
+                <input type="tel" id="inp-telefono" required placeholder="56911111111">
+            </section>
+            <section class="direccion-entraga" id="direccion-entraga">
+                <label for="" id="pais-entrea">Pais de entrega</label>
+                <select name="" id="pais-entrga" required>
+                    <option value="seleccione">Selecione una opcion</option>
+                    <option value="chile">Chile</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="peru">Peru</option>
+                    <option value="estados unidos">Estados unidos</option>
+                    <option value="españa">España</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="japon">japon</option>
+                </select>
+                <label for="">Provincia / Estado:</label>
+                <input type="text" name="" id="Provincia-Estado">
+                <label for="">Ciudad</label>
+                <input type="text" name="" id="Ciudad">
+                <label for="">Calle y número</label>
+                <input type="text" name="" id="Calle y número">
+                <label for="" id="Código-postal">Código postal</label>
+                <input type="text" name="" id="Código-postal">
+                <label for="" id="Piso-departamento">Piso y departamento</label>
+                <input type="text" name="" id="Piso-departamento ">
+                <label for="" id="Referencia-instrucciones-adicionales">Referencia o instrucciones adicionales</label>
+                <textarea name="" id="Referencia-instrucciones-adicionales"></textarea>
+            </section>
+            <section class="Preferencias-Términos" id="Preferencias-Términos">
+                <div class="contenedor-checkbox">
+                    <label for="">Categorías de interés</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label" for="">Tecnología Gaming</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="" >
+                        <label class="form-check-label" for="checkChecked"> electronicas</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label" for="">Material de oficina</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkChecked" >
+                        <label class="form-check-label" for="checkChecked">articulos de hogar</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label" for="">repuestos y accesorios automotriz</label>
+                    </div>
+                </div>
+                <div class="contenedor-radio">
+                    <label for="">Tipo de cliente</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioDisabled" id="radioDisabled">
+                        <label class="form-check-label" for="">Consumidor final</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioDisabled" id="radioCheckedDisabled">
+                        <label class="form-check-label" for="radioCheckedDisabled">Revendedor</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioDisabled" id="radioCheckedDisabled">
+                        <label class="form-check-label" for="radioCheckedDisabled">Empresa</label>
+                    </div>
+                </div>
+                <label for="">¿Cómo nos conociste?</label>
+                <select name="" id="">
+                    <option value="Redes sociales">Redes sociales</option>
+                    <option value="Recomendación">Recomendación</option>
+                    <option value="Búsqueda web">Búsqueda web</option>
+                    <option value="Publicidad">Publicidad</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <div class="Suscripción-newsletter" id="Suscripción-newsletter">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="" id="">
+                        <label class="form-check-label" for="">Suscripción al newsletter</label>
+                    </div>
+                </div>
+                <div class="Aceptación-Términos-Condiciones" id="Aceptación-Términos-Condiciones">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label" for="">Aceptación de Términos y Condiciones</label>
+                    </div>
+                </div>
+                <div class="Aceptación-Política-Privacidad" id="Aceptación-Política-Privacidad">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label" for="">Aceptación de la Política de Privacidad </label>
+                    </div>
+                </div>
+            </section>
+            <section class="Botones-Acción" id="Botones-Acción">
+                <button type="submit" class="btn-registrarme" id="btn-resistrarme">registar</button>
+                <button type="submit" class="btn-limpiar" id="btn-limpiar">limpiar formulario</button>
+            </section>
+        </div>
     </form>
 </body>
 </html>
+
+
+

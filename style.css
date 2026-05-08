@@ -101,3 +101,35 @@ ul{
     color: #333;
     font-size: 0.95rem;
 }
+
+@media all and (max-width: 768px){
+    .encabesado{
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    .lista-nav{
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1rem;
+    }
+    .seccion-cards{
+        grid-template-columns: 1fr;
+    }
+}
+@media all and (max-width: 368px) {
+    .encabesado{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .lista-nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+  
+}
